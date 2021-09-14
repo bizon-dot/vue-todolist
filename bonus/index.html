@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- MyCss -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container" id="root">
+
+        <head>
+            <div class="logo">
+                <img src="https://www.boolean.careers/images/misc/logo.png" alt="Logo Boolean" />
+            </div>
+        </head>
+        <!--/Container -->
+        <!-- Main -->
+        <main>
+            <div class="add-form">
+                <input @keyUp.enter="addTask" type="text" v-model="newTask" placeholder="Nuova Task" />
+                <button @click="addTask">Aggiungi task</button>
+            </div>
+            <div class="tasks">
+                <ul v-if="tasks.length > 0">
+                    <li v-for="(task, index) in tasks" @click="changeStatus(index)" :class="(task.status === true) ? `done` : `to-do`" >
+                        {{task.task}}
+                        <i class="far fa-trash-alt"  @click="removeTask(index)"></i>
+                    </li>
+                </ul>
+                <div v-else class="no-task"><span>Nessuna task presente</span></div>
+            </div>
+    </div>
+
+    </main>
+    <!-- /Main -->
+
+
+
+    <!-- VueJs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- MainJs -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
