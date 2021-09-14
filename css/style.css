@@ -1,0 +1,92 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #abc;
+}
+/* Container */
+
+.container {
+width: 80%;
+margin: 0 auto;
+padding: 10px;
+} 
+
+/* /Container */
+
+/* Dimensioni main-logo */
+
+.logo{
+    width: 25%;
+    margin-top: 1em;
+}
+
+.logo img{
+    width: 100%;
+}
+/* /Dimensioni main-logo */
+
+/* Aggiungi task */
+.add-form {
+    display: flex;
+	justify-content: center;
+	margin-top: 3em;
+	width: 100%;
+}
+
+.add-form input {
+	height: 50px;
+	width: 500px;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid grey;
+	font-size: 1.2rem;
+	margin-right: 20px;
+}
+
+.add-form button {
+	height: 50px;
+	width: 200px;
+	border-radius: 10%;
+	border: 0;
+	background-color: #2199e8;
+}
+
+/* /Aggiungi task */
+
+/* Elenco Tasks */
+.tasks {
+	margin-top: 40px;
+	width: 80%;
+}
+
+.tasks ul {
+	list-style: none;
+	font-size: 1.2rem;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.tasks ul li {
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* / Elenco Tasks */
+
+.no-task {
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+/* Delete Tasks */
+
+.fa-trash-alt{
+    color:red;
+}
