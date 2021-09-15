@@ -1,37 +1,42 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body{
-    background-color: #abc;
+body {
+	background-color: #abc;
 }
+
 /* Container */
 
 .container {
-width: 80%;
-margin: 0 auto;
-padding: 10px;
-} 
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+}
 
 /* /Container */
 
 /* Dimensioni main-logo */
 
-.logo{
-    width: 25%;
-    margin-top: 1em;
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	margin-top: 1em;
 }
 
-.logo img{
-    width: 100%;
+.logo img {
+	width: 100%;
 }
+
 /* /Dimensioni main-logo */
 
 /* Aggiungi task */
 .add-form {
-    display: flex;
+	display: flex;
 	justify-content: center;
 	margin-top: 3em;
 	width: 100%;
@@ -89,16 +94,16 @@ padding: 10px;
 
 /* Icon Delete Tasks */
 
-.fa-trash-alt{
-    color:blue;
+.fa-trash-alt {
+	color: blue;
 }
 
 /* Status task */
 
-.done{
+.done {
 	background-color: lightgreen;
 }
 
-.to-do{
+.to-do {
 	background-color: red;
 }
